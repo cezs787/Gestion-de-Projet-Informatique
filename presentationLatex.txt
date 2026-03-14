@@ -19,3 +19,30 @@ Pour garantir la pertinence des sources, nous avons écarté les documents non s
 \subsection{Sélection finale} 
 
 Parmi une vingtaine d’articles initiaux, quatre ont été choisis pour une analyse approfondie selon les critères suivants : diversité des approches (technique, sociale, éthique), diversité des contextes d’usage (emploi, web, assistance technologique, représentation du handicap), qualité des publications (revues avec comité de lecture, rapports institutionnels) et actualité (2021-2023).
+
+\section{Présentation des articles sélectionnés} \label{sec: présentation}
+
+\subsection {Article 1 : Touzet (2023) - IA et emploi pour les personnes handicapées} Cet article, publié par l'OCDE, examine comment l'IA s'intègre dans les processus d'emploi pour les personnes en situation de handicap․ Grâce à l'IA, il est possible de personnaliser les interfaces, comme par exemple en agrandissant le texte, en utilisant la synthèse vocale ou encore en ayant recours à des commandes vocales,, ce qui facilite l'accès aux outils numériques․ De plus, elle peut assister les recruteurs dans l'évaluation objective des compétences tout en réduisant les préjugés liés au handicap.
+
+Parmi les exemples mentionnés figurent : des systèmes de reconnaissance vocale pour ceux qui ne peuvent pas utiliser un clavier, des outils de traduction automatique en langue des signes et des plateformes intelligentes qui associent compétences et postes adaptés.
+
+Toutefois, l'article met en garde contre le fait que les algorithmes, formés sur des données historiques biaisées où les personnes handicapées sont souvent sous-représentées, pourraient renforcer оu aggraver certaines discriminations․ Il est donc essentiel d'effectuer une surveillance régulière et des audits sur ces systèmes․ Comme le souligne l'auteur, la technologie n'est jamais neutre : elle reflète toujours les choix et les données sur lesquelles elle se fonde.
+
+\subsection{Article 2 : Brotosaputro et al. (2022) - Technologies d'assistance basées sur l'IA} Un bref aperçu des technologies d'assistance avec un composant basé sur l'IA, tel que présenté dans une étude du Journal оf Accessible Technologies․ Cet article propose une analyse pragmatique des technologies d'assistance qui tirent parti de l'IA pоur favoriser l'autonomie.
+
+Parmi les avancées notables : la reconnaissance vocale adaptée aux personnes souffrant de déficiences motrices ou de troubles de la parole, capable d'identifier divers accents et intentions ; des systèmes de description automatique d'images utilisant la vision par ordinateur, offrant des textes descriptifs lus à voix haute pour les malvoyants (par exemple, une personne en chemise bleue sourit devant un bâtiment en briques rouges) ; et des claviers intelligents prédictifs qui diminuent le nombre de frappes, particulièrement bénéfiques pour ceux ayant des déficits moteurs ou cognitifs.
+
+Les auteurs soulignent que ces technologies sоnt performantes mais font face à des obstacles significatifs en matière d'adoption, tels que leur coût élevé, le manque d'informations disponibles pour les utilisateurs, ainsi que des problèmes d'utilisabilité encore non résolus.
+
+\subsection{Article 3 : Campoverde-Molina et al.} Cette analyse approfondie examine l'utilisation de l'IA pour automatiser la vérification de l'accessibilité des sites web et pour générer des descriptions d'images, en confrontant plusieurs études et tendances․ Les intelligences artificielles sont capables de repérer automatiquement des problèmes d'accessibilité courants tels que des contrastes insuffisants, des images dépourvues de texte alternatif, un étiquetage manquant sur les boutons ou une navigation peu claire.
+
+Cette détection permet aux développeurs de rectifier ces erreurs avant le lancement du site․ De plus, l'IA joue un rôle dans la génération automatique de description d'images, ce qui représente un véritable avancement pour les utilisateurs de lecteurs d'écran․ Cependant, il arrive que ces descriptions automatiques manquent de précision ou de contexte et ne peuvent pas remplacer une conception pensée dès le départ pour garantir l'accessibilité.
+
+Les auteurs soulignent dоnc l'importance d'une approche mixte alliant automatisation et intervention humaine. Le potentiel est évident mais reste encore partiellement exploité.
+
+\subsection{Article 4 : Goggin et al. (2023) sur le sujet de l'IA, la communication et la représentation du handicap.}
+Cet article adopte une approche sociologique et critique․ Il souligne que l'IA ne se résume pas à un simple outil neutre, mais qu'elle véhicule des représentations et des valeurs concernant le handicap qui influencent la perception sociale.
+
+Les principaux dangers incluent : la reproduction de stéréotypes médicaux où le handicap est vu comme une dépendance et une déficience, négligeant ainsi la dimension sociale de l'inclusion. La surveillance accrue résultant de la collecte massive de données comportementales et médicales par les technologies d'assistance, mettant en péril la vie privée et l'autonomie, et la mauvaise représentation des besoins réels causée par l'exclusion fréquente des personnes handicapées du processus de conception, entraînant des créations parfois infantilisantes ou inappropriées.
+
+Les auteurs plaident pour un cadre "rien sur nous sans nous", impliquant directement les personnes concernées dans la cоnception de technologies respectueuses et adaptées, plaçant leur expérience au cœur du développement.
