@@ -8,3 +8,14 @@ Le handicap, selon la définition sociale de l’ONU (1982), ne se limite pas à
 La rencontre de ces deux domaines suscite la question majeure : l’IA peut-elle accroître le pouvoir et l’inclusion des personnes handicapées ? Notre synthèse se propose d’examiner cette question en analysant quatre articles représentatifs qui abordent divers aspects comme l'emploi, l'accessibilité numérique, les technologies d’assistance et les représentations sociales.
 
 Pour répondre à cela nous avons construit notre synthèse de la façon suivante : Tout d'abord dans la section \ref{sec: methodo} nous présentons comment nous avons recherché et sélectionné nos articles. Ensuite dans la section \ref{sec: présentation} nous présentons les articles que nous avons sélectionnés. Puis dans la section \ref{sec: discussion} nous avons relevés les points, les limites et les risques communs entre les articles; et par la suite nous avons fait la synthèse de l'analyse. Nous montrons dans la section \ref{sec: utilisation} comment l'outil ChatGPT a été utilisé, les prompts saisis et analyse des réponses données. Enfin nous apportons une conclusion de notre travail dans la section \ref{sec: conclusion}. 
+
+\section{Méthodologie de recherche} \label{sec: methodo}
+
+\subsection{Recherche documentaire}
+
+Nous avons mené une étude approfondie sur plusieurs bases de données académiques complémentaires afin d'assurer une vue d'ensemble multidisciplinaire : Google Scholar (généraliste), HAL (sciences humaines francophones), PubMed (santé publique) et IEEE Xplore (informatique et technologies)․ Les recherches ont été réalisées en français et en anglais, avec certains des mots-clés suivants (par exemple, intelligence artificielle ET handicap, AI AND disability, assistive technologies AND AI).
+Pour garantir la pertinence des sources, nous avons écarté les documents non scientifiques (blogs, presse) ainsi que les travaux se concentrant uniquement sur l'IA en santé sans lien direct avec le handicap.
+
+\subsection{Sélection finale} 
+
+Parmi une vingtaine d’articles initiaux, quatre ont été choisis pour une analyse approfondie selon les critères suivants : diversité des approches (technique, sociale, éthique), diversité des contextes d’usage (emploi, web, assistance technologique, représentation du handicap), qualité des publications (revues avec comité de lecture, rapports institutionnels) et actualité (2021-2023).
