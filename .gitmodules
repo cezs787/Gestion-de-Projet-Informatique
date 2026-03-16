@@ -1,0 +1,3 @@
+[submodule "extern/Projet-JS"]
+	path = extern/Projet-JS
+	url = https://github.com/cezs787/Projet-JS
