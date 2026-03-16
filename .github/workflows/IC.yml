@@ -1,0 +1,43 @@
+name: Vérification LaTeX et site web
+
+# Déclenche le workflow à chaque push ou pull request
+on:
+  push:
+    branches: [main, ma-branche]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      #  Récupérer le code
+      - uses: actions/checkout@v3
+
+      #  Installer LaTeX et htmlhint
+      - name: Installer LaTeX et HTML validator
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+          npm install -g htmlhint
+
+      #  Vérifier la compilation LaTeX
+      - name: Compiler les fichiers .tex
+        run: |
+          for f in *.tex; do
+            echo "Compilation de $f ..."
+            pdflatex -interaction=nonstopmode "$f" > /dev/null
+            if [ $? -ne 0 ]; then
+              echo "Erreur de compilation sur $f"
+              exit 1
+            fi
+          done
+
+      #  Vérifier les fichiers HTML
+      - name: Vérification HTML
+        run: |
+          for f in *.html; do
+            echo "Validation de $f ..."
+            htmlhint "$f" || exit 1
+          done
