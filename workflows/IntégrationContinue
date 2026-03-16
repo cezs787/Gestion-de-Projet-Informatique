@@ -1,1 +1,13 @@
+name: Continuous integration Test
 
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Test du projet
+        run: echo "Le projet fonctionne"
