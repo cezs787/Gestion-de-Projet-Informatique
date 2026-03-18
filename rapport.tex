@@ -63,11 +63,18 @@ Le site web informatif du projet est disponible à l'adresse suivante: https://c
 
 \subsection{[C2] Intégration continue}
 
-        Nous avons mis en place un système d’intégration continue avec GitHub Actions.
-        À chaque modification du projet, une vérification automatique est lancée pour s’assurer que le projet fonctionne correctement. Les erreurs de copilation et de code des fichiers Latex et du site web sont détéctées et signaléés. 
-        Pour cela, nous avons utilisé l'outil d'intégration de version de github. Nous avons crée notre propre workflow car ceux prposés par GitHub Actions ne correspondaient pas à nos attentes.  
-        Cela nous a permis de ne pas avoir à recompiler trop souvent ou toujours tester toutes nos contributions.
-
+        Nous avons mis en place un système d’intégration continue avec GitHub Actions.\\
+        À chaque modification du projet, une vérification automatique est lancée pour s’assurer que le projet fonctionne correctement. Les erreurs de copilation et de code des fichiers Latex et du site web sont détéctées et signaléés. \\
+        Pour cela, nous avons utilisé l'outil d'intégration de version de github. Nous avons crée notre propre workflow car ceux prposés par GitHub Actions ne correspondaient pas à nos attentes.  \\
+        Cela nous a permis de ne pas avoir à recompiler trop souvent ou toujours tester toutes nos contributions.\\
+        Voici le contenu de notre worflow ainsi que son explication:\\
+        \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{captures_ecran/C3-code.png}
+    \caption{Illustration du code C3}
+    \label{fig:c3code}
+\end{figure}
+        Le workflow a été amelioré au fur et a mesure de l'évolution du projet, par exemple, la ligne : pdflatex -interaction=nonstopmode "$f" > /dev/null  , a été remplacée par : pdflatex -interaction=nonstopmode "$f" pour que les erreurs soient détaillées et que le message affiché soit précis. 
 
 \section{Gestion avancée et conclusion}
 
