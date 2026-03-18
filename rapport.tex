@@ -71,7 +71,60 @@ AHMED}
 
 \subsection{[C3] Gestion de submodule}
 
-[À compléter]
+Nous avons intégré à notre projet un submodule Git afin de gérer une dépendance externe. 
+Pour démontrer l'utilisation des commandes d'intégration, le \texttt{Projet-JS} fera office de 
+sous-module dans notre dépôt principal. \\
+L'usage de la fonctionnalité submodule peut se montrer pertinente, lorsque le projet en cours dépend 
+du contenu d'un autre projets ; son accès et sa visualisation sont alors facilités.
+
+\subsubsection*{Ajout du submodule}
+
+Pour ajouter le submodule au repertoire principal, il faut avoir recours à la commande suivante :
+
+\begin{verbatim}
+git submodule add https://github.com/cezs787/Projet-JS extern/Projet-JS
+\end{verbatim}
+
+Laquelle a créé automatiquement un fichier \texttt{.gitmodules} contenant la configuration du 
+submodule.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.85\linewidth]{C3.png}
+    \caption{Fichier \texttt{.gitmodules} après ajout du sous-module.}
+\end{figure}
+
+\newpage
+
+\subsubsection*{Utilisation par un nouvel utilisateur}
+
+Pour pouvoir acceder au submodule, il est nécessaire pour le nouvel utilisateur de cloner 
+correctement le projet avec le submodule, il doit alors avoir recours à la commande suivante :
+
+\begin{verbatim}
+git clone --recursive https://github.com/<nom-du-depot>.git
+\end{verbatim}
+
+Si le dépôt a déjà été cloné sans l'option \texttt{--recursive}, l'initialisation se fait via :
+
+\begin{verbatim}
+git submodule update --init --recursive
+\end{verbatim}
+
+\subsubsection*{Mise à jour du submodule}
+
+Pour synchroniser le submodule avec la dernière version disponible dans son dépôt d'origine :
+
+\begin{verbatim}
+git submodule update --remote
+\end{verbatim}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.95\linewidth]{C3_2.png}
+    \caption{Ajout du submodule via la commande \texttt{git submodule add}.}
+\end{figure}
 
 \subsection{[C4] Gestion par l'outil Project GitHub}
 
