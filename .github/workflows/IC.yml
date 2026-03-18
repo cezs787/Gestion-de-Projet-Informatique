@@ -27,7 +27,7 @@ jobs:
         run: |
           for f in *.tex; do
             echo "Compilation de $f ..."
-            pdflatex -interaction=nonstopmode "$f" > /dev/null
+            pdflatex -interaction=nonstopmode "$f"
             if [ $? -ne 0 ]; then
               echo "Erreur de compilation sur $f"
               exit 1
