@@ -66,18 +66,34 @@ Le site web contient l'objectif global du projet, le nom des contributrices, le 
 
 \subsection{[C2] Intégration continue}
 
-        Nous avons mis en place un système d’intégration continue avec GitHub Actions.\\
+         Nous avons mis en place un système d’intégration continue avec GitHub Actions.\\
         À chaque modification du projet, une vérification automatique est lancée pour s’assurer que le projet fonctionne correctement. Les erreurs de copilation et de code des fichiers Latex et du site web sont détéctées et signaléés. \\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-actions-revue.png} 
+            \\
+            \small Figure : Illustration du point C2
+        \end{center}
         Pour cela, nous avons utilisé l'outil d'intégration de version de github. Nous avons crée notre propre workflow car ceux prposés par GitHub Actions ne correspondaient pas à nos attentes.  \\
         Cela nous a permis de ne pas avoir à recompiler trop souvent ou toujours tester toutes nos contributions.\\
-         Voici le contenu de notre worflow ainsi que son explication:\\
-        \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.5\textwidth]{C2-code.png}
-        \caption{workflow c2}
-        \label{fig:c2code}
-        \end{figure}
-        Le workflow a été amelioré au fur et a mesure de l'évolution du projet, par exemple, la ligne : pdflatex -interaction=nonstopmode "$f" > /dev/null  , a été remplacée par : pdflatex -interaction=nonstopmode "$f" pour que les erreurs soient détaillées et que le message affiché soit précis. 
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-exemple-réussi.png} 
+            \\
+            \small Figure : Illustration du code C2
+        \end{center}
+    
+     Voici le contenu de notre worflow ainsi que son explication:\\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-code.png} 
+            \\
+            \small Figure : Illustration du code C2
+            \end{center}
+       
+        Le workflow a été amelioré au fur et a mesure de l'évolution du projet, par exemple, la ligne : pdflatex -interaction=nonstopmode "$f" > /dev/null  , a été remplacée par : pdflatex -interaction=nonstopmode "$f" pour que les erreurs soient détaillées et que le message affiché soit précis. \\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-échoué.png} 
+            \\
+            \small Figure : Illustration du point c2
+        \end{center}
 
 
 
