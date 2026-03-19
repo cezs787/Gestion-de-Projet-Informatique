@@ -1,0 +1,241 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./captures_ecran/} }
+\usepackage{float} %
+
+\title{Gestion de Projet Informatique\\
+        TD 7 : Mise en situation}
+\author{Aida HASHEMI BENI, Louisa SOUICI, Tasnime EL OUESLATI,\\ Cérine BEN 
+AHMED}
+\date{Année 2025/2026}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{\textit{Introduction}}
+	Pour ce projet, nous avons choisi de réaliser une rédaction collaborative d’un document LaTeX correspondant au compte rendu du mini-projet. Nous avons géré ce projet via un dépot Git en respectant la répartition suivante des taches : Cerine s'est chargé des points C3 et C4, Aida des points B1 et B2, louisa des points B3 et B4 et Tasnime des points C1 et C2.
+
+\section{Organisation}
+
+\subsection{[A1] Constitution d'un groupe}
+
+Le groupe est constitué de Aida HASHEMI BENI, Tasnime EL OUESLATI, Cérine BEN AHMED et Louisa SOUICI du TD2.
+
+\subsection{[A2] Dépôt Git en ligne}
+
+Voici le dépot Git qui est en public \url{https://github.com/cezs787/Gestion-de-Projet-Informatique}.
+
+\begin{center}
+        \includegraphics[width=0.5\textwidth]{A2} 
+        \\
+        \small Figure : Illustration du point a2
+    \end{center}
+
+\subsection{[A3] Intégration des contributions}
+
+Nous avons toutes contribué sur des points différents du projet et parfois ensemble comme par exemple sur le rapport.
+\begin{center}
+        \includegraphics[width=0.5\textwidth]{A3} 
+        \\
+        \small Figure : Illustration du point a3
+    \end{center}
+
+
+
+\section{Mise en situation Git}
+
+\subsection{[B1] Gestion par branches}
+
+        Nous avons créé une branche par personne pour pouvoir travailler chacune de notre coté sans jamais modifier directement le contenu de la branche main qui nous a servi à garder des éléments 
+fondamentaux du projet, puis pouvoir mettre en commun notre travail. Nous avons aussi créé une branche "compte_ rendu" qui a servi à stocker tous les documents du rendu et à pouvoir mettre à 
+disposition du groupe un texte de base pour la rédaction du rapport, auquel chacune a pu apporter sa contribution. 
+        \begin{center}
+                \includegraphics[width=0.5\textwidth]{B1} 
+                \\
+                \small Figure : Illustration du point b1
+            \end{center}
+       
+
+\subsection{[B2] Intégration de version et tag}
+
+[À compléter]
+
+\subsection{[B3] Gestion des propositions de contribution}
+
+        Nous nous sommes réparties les taches dans la section issues. Nous les avons listées sous formes d'issues puis chacune s'est assigné la tache qu'elle voulait en respectant un certain équilibre au niveau de la charge de travail (deux points par personnes).
+        \begin{center}
+                \includegraphics[width=0.5\textwidth]{B3} 
+                \\
+                \small Figure : Illustration du point b3
+            \end{center}
+      
+
+\section{Outils avancés}
+
+\subsection{[B4] Intégration du site web}
+
+Le site web informatif du projet est disponible à l'adresse suivante: https://cezs787.github.io/Gestion-de-Projet-Informatique/ \\
+Le site web contient l'objectif global du projet, le nom des contributrices, le lien du dépot GitHub, le résumé et l'introduction du code sur lequels on a travaillé.
+\begin{center}
+        \includegraphics[width=0.5\textwidth]{B4} 
+        \\
+        \small Figure : Illustration du point b4
+    \end{center}
+
+\subsection{[C1] Répartition des tâches et milestones}
+
+
+
+
+\subsection{[C1] Répartition des tâches et milestones}
+Pour assurer la coordination entre les membres du groupe, nous avons utilisé l'outil "Issues" de GitHub. Chaque tâche a été définie et assignée à un responsable spécifique, ce qui a permis d'illustrer la répartition claire du travail.
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{Screenshot 2026-03-16 211822.png} 
+    \\
+    \small Figure : Capture d'ecran de l'attribution des taches sur GitHub
+\end{center}
+
+\subsection{[C2] Intégration continue}
+
+         Nous avons mis en place un système d’intégration continue avec GitHub Actions.\\
+        À chaque modification du projet, une vérification automatique est lancée pour s’assurer que le projet fonctionne correctement. Les erreurs de copilation et de code des fichiers Latex et du site web sont détéctées et signaléés. \\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-actions-revue.png} 
+            \\
+            \small Figure : Compte rendu des vérifications C2
+        \end{center}
+        Pour cela, nous avons utilisé l'outil d'intégration de version de github. Nous avons crée notre propre workflow car ceux prposés par GitHub Actions ne correspondaient pas à nos attentes.  \\
+        Cela nous a permis de ne pas avoir à recompiler trop souvent ou toujours tester toutes nos contributions.\\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-exemple-réussi.png} 
+            \\
+            \small Figure : Exemple de push réussi C2
+        \end{center}
+    
+     Voici le contenu de notre worflow ainsi que son explication:\\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-code.png} 
+            \\
+            \small Figure : Code du workflow C2
+            \end{center}
+       
+        Le workflow a été amelioré au fur et a mesure de l'évolution du projet, par exemple, la ligne : pdflatex -interaction=nonstopmode "$f" > /dev/null  , a été remplacée par : pdflatex -interaction=nonstopmode "$f" pour que les erreurs soient détaillées et que le message affiché soit précis. \\
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-échoué.png} 
+            \\
+            \small Figure : Exemple de push échoué c2
+        \end{center}
+
+		\begin{center}
+            \includegraphics[width=0.5\textwidth]{C2-com.png} 
+            \\
+            \small Figure : commentaire c2
+        \end{center}
+
+\section{Gestion avancée et conclusion}
+
+\subsection{[C3] Gestion de submodule}
+
+Nous avons intégré à notre projet un submodule Git afin de gérer une dépendance externe. 
+Pour démontrer l'utilisation des commandes d'intégration, le \texttt{Projet-JS} fera office de 
+sous-module dans notre dépôt principal. \\
+L'usage de la fonctionnalité submodule peut se montrer pertinente, lorsque le projet en cours dépend 
+du contenu d'un autre projets ; son accès et sa visualisation sont alors facilités.
+
+\subsubsection*{Ajout du submodule}
+
+Pour ajouter le submodule au repertoire principal, il faut avoir recours à la commande suivante :
+
+\begin{verbatim}
+git submodule add https://github.com/cezs787/Projet-JS extern/Projet-JS
+\end{verbatim}
+
+Laquelle a créé automatiquement un fichier \texttt{.gitmodules} contenant la configuration du 
+submodule.
+
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{C3.png}
+	\\
+    \small Figure Fichier \texttt{.gitmodules} après ajout du sous-module.
+\end{center}
+
+\newpage
+
+\subsubsection*{Utilisation par un nouvel utilisateur}
+
+Pour pouvoir acceder au submodule, il est nécessaire pour le nouvel utilisateur de cloner 
+correctement le projet avec le submodule, il doit alors avoir recours à la commande suivante :
+
+\begin{verbatim}
+git clone --recursive https://github.com/<nom-du-depot>.git
+\end{verbatim}
+
+Si le dépôt a déjà été cloné sans l'option \texttt{--recursive}, l'initialisation se fait via :
+
+\begin{verbatim}
+git submodule update --init --recursive
+\end{verbatim}
+
+\subsubsection*{Mise à jour du submodule}
+
+Pour synchroniser le submodule avec la dernière version disponible dans son dépôt d'origine :
+
+\begin{verbatim}
+git submodule update --remote
+\end{verbatim}
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{C3_2.png}
+	\\
+    \small Figure : Ajout du submodule via la commande \texttt{git submodule 
+add}.
+\end{center}
+
+\subsection{[C4] Gestion par l'outil Project GitHub}
+
+Les issues ont été transférées sur l'outil Kanban pour une visualisation plus claire des taches et un suivis plus precis de l'avancement de chacunes d'elles.\\
+Pour organiser la gestion et la répatition des différentes taches et étapes du projet, nous avons 
+utilisé l’outil \textit{Projects}, plus précisement son tableau Kanban.
+
+Ce tableau est composé de plusieurs colonnes représentant les étapes classiques d’un flux de travail :
+
+\begin{itemize}
+    \item \textbf{Backlog} : idées et tâches à planifier ;
+    \item \textbf{Ready} : tâches prêtes à être commencées ;
+    \item \textbf{In progress} : tâches en cours de réalisation ;
+    \item \textbf{In review} : tâches en attente de relecture ou de vérification ;
+    \item \textbf{Done} : tâches finalisées.
+\end{itemize}
+
+Sur le tableau (Figure 1), apparaissent les differentes taches définies par le groupe et leur état de 
+progression ; son utilisation nous a permis de nous réferer à des taches précises lors de nos 
+discussions sur le projet.\\
+
+Pour assurer l'interactivité du groupe avec le tableau, nous avons accordé les droits 
+d'administrateur à chacune des membres du groupe.
+
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{C4.png}
+	\\
+    \small Figure : Visualisation du tableau du groupe.
+\end{center}
+
+
+\subsection{Conclusion}
+
+ Pour conclure, ce projet a été très formateur pour nous et nous a permis d'aquerir des bonnes pratiques essentielles à un bon travail en groupe. Nous avons rencontré des difficultés qui nous on permis de gagner en experience et en connaissance de GitHub et de ses outils, que nous remobiliserons surement à l'avenir, etant donné que GitHub nous a toutes convaincues en terme de puissance et de fonctionnalités. Les éléments vues en cours ont été concrétisés et nous avons appris de nouvelles choses de nos erreurs, par exemple nous saurons à l'avenir qu'avant de commencer le projet il faudra faire un point sur les connaissances en GitHub de chacunes et établir des règles qui éviterons certains problèmes notamment les  conflits de version, comme par exemple l'obligation de signaler lorseque l'on travail sur un document et l'interdiction par conséquent aux autres de travailler sur le meme document en meme temps étant donné que cela pourrait écraser le travail fait, comme nous en avons fait l'experience, ou encore l'obligation pour chacune de travailler d'abord sur sa branche.
+        Ce projet nous a aussi permis de decouvrir des outils tels que GitHub Pages qui permet la création facile et l'hebergement gratuit de sites web ainsi que leur gestion collaborative et continue.
+    Nous avons également découvert l'outil GitHub Actions que nous avons utilisé pour verifier le code de notre site web et pour automatiser certaines taches comme la compilation du document Latex. Cet outil nous à permis un gain de temps conséquent et à l'avenir nous l'utiliserons dès le début du projet.
+
+\end{document}
