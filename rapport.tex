@@ -66,17 +66,23 @@ disposition du groupe un texte de base pour la rédaction du rapport, auquel cha
 
 \subsection{[B2] Intégration de version et tag}
 
-[À compléter]
+Pour garantir la traçabilité et la stabilité de notre rendu, nous avons mis en œuvre une stratégie de versionnage sémantique à l'aide des \textbf{Tags Git}. Contrairement aux branches qui sont dynamiques, les tags nous permettent de figer le dépôt à des étapes clés du projet.
 
-\subsection{[B3] Gestion des propositions de contribution}
+Nous avons créé deux points principaux :
+\begin{itemize}
+    \item \textbf{v0.1 (Version de structure)} : Créé sur la branche \texttt{Aida1}, ce tag marque la mise en place de l'ossature du rapport LaTeX et l'intégration des premières sections techniques.
+	\item \textbf{v0.8 (Pré-production)} : Créé après la rédaction complète des sections B2 et C1 et l'intégration des captures d'écran, signalant que la branche est prête pour la fusion.
+    \item \textbf{v1.0 (Version finale)} : Ce tag identifie l'état final du projet après la fusion de toutes les contributions, incluant l'intégralité des captures d'écran et la conclusion.
+\end{itemize}
 
-        Nous nous sommes réparties les taches dans la section issues. Nous les avons listées sous formes d'issues puis chacune s'est assigné la tache qu'elle voulait en respectant un certain équilibre au niveau de la charge de travail (deux points par personnes).
-        \begin{center}
-                \includegraphics[width=0.5\textwidth]{B3} 
-                \\
-                \small Figure : Illustration du point b3
-            \end{center}
-      
+Cette méthode facilite le retour à une version stable en cas d'erreur et permet de présenter un livrable propre et identifié à l'évaluateur.
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{tags_final.png} 
+    \\
+    \small Figure : Capture d'écran de l'historique des versions (Tags) sur GitHub.
+\end{center}
+
 
 \section{Outils avancés}
 
@@ -90,18 +96,25 @@ Le site web contient l'objectif global du projet, le nom des contributrices, le 
         \small Figure : Illustration du point b4
     \end{center}
 
+
+
+
+
+
+
 \subsection{[C1] Répartition des tâches et milestones}
-
-
-
-
-\subsection{[C1] Répartition des tâches et milestones}
-Pour assurer la coordination entre les membres du groupe, nous avons utilisé l'outil "Issues" de GitHub. Chaque tâche a été définie et assignée à un responsable spécifique, ce qui a permis d'illustrer la répartition claire du travail.
+Pour assurer la répartition des taches entre les membres du groupe, nous avons utilisé l'outil "Issues" de GitHub. Chaque tâche a été définie et assignée à une personne du groupe.
 
 \begin{center}
     \includegraphics[width=0.8\textwidth]{Screenshot 2026-03-16 211822.png} 
     \\
     \small Figure : Capture d'ecran de l'attribution des taches sur GitHub
+\end{center}
+
+	Nous avons également utilisé des milestones pour définir des objectifs à atteindre et une date critique de rendu.
+	\begin{center}
+    \includegraphics[width=0.5\textwidth]{C1-milestone.png}
+	\\
 \end{center}
 
 \subsection{[C2] Intégration continue}
